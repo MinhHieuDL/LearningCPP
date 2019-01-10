@@ -8,8 +8,9 @@ int main(void)
 	Student aSophomore, aFreshman;
 	aSophomore.setidNum(1234);
 	aFreshman.setidNum(2345);
-	cout << " Athletic fee of aFreshman: " << aFreshman.getAthleticFee() << endl;
-	cout << " Athletic fee of aSophomore: " << aSophomore.getAthleticFee() << endl;
+	cout << "Athletic fee of aFreshman: " << aFreshman.getAthleticFee() << endl;
+	cout << "Athletic fee of aSophomore: " << aSophomore.getAthleticFee() << endl;
+	cout << "The athletic fee for all students is " << Student::athleticFee << endl;
 	cin.get();
 	return 0;
 }
