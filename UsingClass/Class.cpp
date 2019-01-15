@@ -61,6 +61,7 @@ double Employee::getHourlyRate()
 	return hourlyRate;
 }
 
+//Class Writer
 Writer::Writer(string first, string middle, string last)
 {
 	firstName = first;
@@ -84,3 +85,41 @@ string Writer::toString()
 		fullName = firstName + " " + lastName;
 	return fullName;
 }
+
+// Class Inventory Item
+InventoryItem::InventoryItem(int stkNum, double pr)
+{
+	stockNum = stkNum;
+	price = pr;
+}
+void InventoryItem::display()
+{
+	cout << "Item #" << stockNum << " costs $" <<
+		price << endl;
+}
+
+// Class Saleperson
+Salesperson::Salesperson(int id, string lastName)
+{
+	idNum = id;
+	name = lastName;
+}
+void Salesperson::display()
+{
+	cout << "Salesperson #" << idNum << " " << name << endl;
+}
+
+// Class Transaction
+Transaction::Transaction(int num, int item, double pr,
+	int salesId, string name) : itemSold(item, pr),
+	seller(salesId, name)
+{
+	transNum = num;
+}
+void Transaction::display()
+{
+	cout << "Data for transaction #" << transNum << endl;
+	itemSold.display();
+	seller.display();
+}
+

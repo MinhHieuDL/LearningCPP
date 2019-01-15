@@ -52,3 +52,34 @@ public:
 	string toString();
 	// other functions go here
 };
+
+class InventoryItem
+{
+private:
+	int stockNum;
+	double price;
+public:
+	InventoryItem(int, double);
+	void display();
+};
+
+class Salesperson
+{
+private:
+	int idNum;
+	string name;
+public:
+	Salesperson(int, string);
+	void display();
+};
+
+class Transaction
+{
+private:
+	int transNum;
+	InventoryItem itemSold;
+	Salesperson seller;
+public:
+	Transaction(int, int, double, int, string);
+	void display();
+};

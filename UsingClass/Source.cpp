@@ -24,12 +24,20 @@ int main(void)
 	
 	Employee softwareEngineer(1144,1.25);
 	cout << "Software Engineer ID is: " << softwareEngineer.getIdNum() << " Rate: " << softwareEngineer.getHourlyRate() << endl;
+	
 	cin.get();
 
 	Writer oneWriter("Le", "Minh", "Hieu");
 	Writer anotherWriter("Le", "Hieu");
 	cout << oneWriter.toString() << endl;
 	cout << anotherWriter.toString() << endl;
+	
 	cin.get();
+
+	Transaction aSale(247, 782, 44.77, 512, "QA");
+	aSale.display();
+
+	cin.get();
+
 	return 0;
 }
