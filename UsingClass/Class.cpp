@@ -1,6 +1,7 @@
 #include "Class.h"
 #include <iostream>
 
+// Class student
 double Student::athleticFee = 45.25;
 void Student::setidNum(int id)
 {
@@ -37,4 +38,25 @@ void Student::displayStudentData()
 double Student::getAthleticFee()
 {
 	return athleticFee;
+}
+
+void Employee::setIdNum(const int id)
+{
+	idNum = id;
+}
+
+// Class Employee
+void Employee::setHourlyRate(const double hour)
+{
+	hourlyRate = hour;
+}
+
+int Employee::getIdNum()
+{
+	return idNum;
+}
+
+double Employee::getHourlyRate()
+{
+	return hourlyRate;
 }
