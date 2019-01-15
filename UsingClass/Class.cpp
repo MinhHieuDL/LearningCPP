@@ -60,3 +60,27 @@ double Employee::getHourlyRate()
 {
 	return hourlyRate;
 }
+
+Writer::Writer(string first, string middle, string last)
+{
+	firstName = first;
+	middleName = middle;
+	lastName = last;
+}
+
+Writer::Writer(string first, string last)
+{
+	firstName = first;
+	middleName = "";
+	lastName = last;
+}
+
+string Writer::toString()
+{
+	string fullName;
+	if (middleName != "")
+		fullName = firstName + " " + middleName + " " + lastName;
+	else
+		fullName = firstName + " " + lastName;
+	return fullName;
+}

@@ -26,8 +26,29 @@ private:
 public:
 	class Employee() : idNum(9999), hourlyRate(6.15)
 	{};
+
+	class Employee(int id, double hour)
+	{
+		idNum = id;
+		hourlyRate = hour;
+	}
+
 	void setIdNum(const int);
 	void setHourlyRate(const double);
 	int getIdNum();
 	double getHourlyRate();
+};
+
+class Writer
+{
+private:
+	string firstName;
+	string middleName;
+	string lastName;
+	// other data members go here
+public:
+	Writer(string, string, string);
+	Writer(string, string);
+	string toString();
+	// other functions go here
 };

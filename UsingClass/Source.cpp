@@ -22,6 +22,14 @@ int main(void)
 	cout << "After setting values" << endl; 
 	cout << " ID: " << assistant.getIdNum() <<" Rate: " << assistant.getHourlyRate() << endl;
 	
+	Employee softwareEngineer(1144,1.25);
+	cout << "Software Engineer ID is: " << softwareEngineer.getIdNum() << " Rate: " << softwareEngineer.getHourlyRate() << endl;
+	cin.get();
+
+	Writer oneWriter("Le", "Minh", "Hieu");
+	Writer anotherWriter("Le", "Hieu");
+	cout << oneWriter.toString() << endl;
+	cout << anotherWriter.toString() << endl;
 	cin.get();
 	return 0;
 }
