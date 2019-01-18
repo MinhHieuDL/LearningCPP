@@ -3,9 +3,10 @@
 
 using namespace std;
 
+
 int main(void)
 {
-	Student aSophomore, aFreshman;
+	/*Student aSophomore, aFreshman;
 	aSophomore.setidNum(1234);
 	aFreshman.setidNum(2345);
 	cout << "Athletic fee of aFreshman: " << aFreshman.getAthleticFee() << endl;
@@ -37,7 +38,16 @@ int main(void)
 	Transaction aSale(247, 782, 44.77, 512, "QA");
 	aSale.display();
 
+	cin.get();*/
+
+	AutomobileInsurancePolicy A1;
 	cin.get();
+
+	Person *p;
+	Employee e1;
+	p = &e1;
+	p->outputData();
+
 
 	return 0;
 }
